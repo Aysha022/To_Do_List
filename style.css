@@ -17,6 +17,7 @@ body {
 }
 h2 {
     font-family: 'Indie Flower', cursive;
+    padding-left: 25px;
 }
 .input-container {
     display: flex;
@@ -33,7 +34,7 @@ input {
 button {
     background: #ff9e4eb7;
     border: none;
-    padding: 8px 12px;
+    padding: 5px 7px;
     border-radius: 6px;
     cursor: pointer;
 }
@@ -52,10 +53,12 @@ button {
     align-items: center;
     margin-top: 5px;
     max-width: 100%;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 .todo-buttons {
     display: flex;
-    gap: 8px;  
+    gap: 5px;  
     flex-shrink: 0;  
 }
 .todo-list li.completed {
@@ -64,7 +67,11 @@ button {
 }
 
 .todo-list li .task-text {
-    flex-grow: 1;      
+    flex-grow: 1;  
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+ 
 }
 
 #bird {
@@ -76,7 +83,7 @@ button {
 }
 
 #bird:hover {
- opacity: 0.8;
+ opacity: 0.7;
 }
 
 #hello {
@@ -110,7 +117,8 @@ button {
     left: 37%; 
     height : 100px;
     width : 400px;
-    padding-top: 50px; 
+    padding-top: 50px;
+    padding-left :22px; 
     background: #ffecf4; 
     border: 3px solid #ffb6c1; 
     border-radius: 20px; 
